@@ -1,4 +1,5 @@
 Approach 1: brute force:
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -17,7 +18,8 @@ public:
 };
 
 
-Approach 2: hash
+Approach 2: hash map
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
