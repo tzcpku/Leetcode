@@ -1,4 +1,4 @@
-Approach 1: brute force:
+//Approach 1: brute force:
 
 class Solution {
 public:
@@ -18,7 +18,7 @@ public:
 };
 
 
-Approach 2: hash map
+//Approach 2: hash map
 
 class Solution {
 public:
