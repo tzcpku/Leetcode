@@ -1,4 +1,4 @@
-Approach 1: set is unique
+//Approach 1: set is unique
 
 class Solution {
 public:
@@ -25,7 +25,7 @@ public:
 };
 
 
-Approach 2: skip the repreated one
+//Approach 2: skip the repreated one
 
 class Solution {
 public:
