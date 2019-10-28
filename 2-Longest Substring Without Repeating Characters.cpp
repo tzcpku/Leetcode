@@ -2,6 +2,7 @@ class Solution {
 public:
 //Approach 1: sliding window optimized
     int lengthOfLongestSubstring(string s) {
+        //map <character, latest index>
         int n = s.size();
         unordered_map<char, int> m;
         int ans = 0;
@@ -13,6 +14,8 @@ public:
             m[s[j]] = j;
         }
         return ans;
+        
+        //map <character, latest index + 1>
         // for(int i = 0, j = 0; j < n; j++) {
         //     if(m.count(s[j])) {
         //         i = max(m[s[j]], i);
@@ -25,6 +28,7 @@ public:
 
 // Approach 2: sliding window
     int lengthOfLongestSubstring(string s) {
+        //use array to check
         int n = s.size();
         int check[256] = {0};
         int ans = 0, i = 0, j = 0;
@@ -38,6 +42,8 @@ public:
             }
         }
         return ans;
+        
+        //use set to check
         // int n = s.size();
         // set<char> m;
         // int ans = 0, i = 0, j = 0;
@@ -66,6 +72,7 @@ public:
     }
     
     bool allUnique(string s, int start, int end){
+        //use array to check
         // int check[256] = {0};
         // for(int i = start; i < end; i++){
         //     if(!check[s[i]]){
@@ -76,6 +83,7 @@ public:
         // }
         // return true;
         
+        //use set to check
         set<char> m;
         for(int i = start; i < end; i++){
             if(m.count(s[i]))
