@@ -2,8 +2,8 @@
 
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
-        set<vector<int>> res;
+    vector<vector<int> > threeSum(vector<int>& nums) {
+        set<vector<int> > res;
         sort(nums.begin(), nums.end());
         if(nums.empty() || nums.front() > 0 || nums.back() < 0)
             return {};
@@ -29,8 +29,8 @@ public:
 
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
-        vector<vector<int>> res;
+    vector<vector<int> > threeSum(vector<int>& nums) {
+        vector<vector<int> > res;
         sort(nums.begin(), nums.end());
         if(nums.empty() || nums.front() > 0 || nums.back() < 0)
             return {};
